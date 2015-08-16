@@ -10,12 +10,12 @@
 		C5478F541B80C36800A379F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5478F531B80C36800A379F1 /* UIKit.framework */; };
 		C5478F561B80C37700A379F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5478F551B80C37700A379F1 /* CoreGraphics.framework */; };
 		C5478F571B80C38900A379F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5478F501B80C32900A379F1 /* Foundation.framework */; };
-		C5D46A4D1B74A9C700BAF8EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A4C1B74A9C700BAF8EF /* main.m */; };
+		C5478F5B1B80DB2B00A379F1 /* ZYMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5478F5A1B80DB2B00A379F1 /* ZYMainController.m */; };
+		C5478F5E1B80DB3F00A379F1 /* ZYNewfeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5478F5D1B80DB3F00A379F1 /* ZYNewfeatureController.m */; };
+		C5478F641B80DB6A00A379F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5478F5F1B80DB6A00A379F1 /* main.m */; };
+		C5478F651B80DB6A00A379F1 /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5478F621B80DB6A00A379F1 /* ZYAppDelegate.m */; };
 		C5D46A561B74A9C700BAF8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A541B74A9C700BAF8EF /* Main.storyboard */; };
 		C5D46A581B74A9C700BAF8EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A571B74A9C700BAF8EF /* Images.xcassets */; };
-		C5D46A791B74AAFD00BAF8EF /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A781B74AAFD00BAF8EF /* ZYAppDelegate.m */; };
-		C5D46A7D1B7501A000BAF8EF /* ZYNewfeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A7C1B7501A000BAF8EF /* ZYNewfeatureController.m */; };
-		C5D46A801B7501BF00BAF8EF /* ZYMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A7F1B7501BF00BAF8EF /* ZYMainController.m */; };
 		C5D46AA61B75042E00BAF8EF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A841B75042E00BAF8EF /* Default-568h@2x.png */; };
 		C5D46AA71B75042E00BAF8EF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A851B75042E00BAF8EF /* Default.png */; };
 		C5D46AA81B75042E00BAF8EF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A861B75042E00BAF8EF /* Default@2x.png */; };
@@ -54,19 +54,19 @@
 		C5478F501B80C32900A379F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5478F531B80C36800A379F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C5478F551B80C37700A379F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C5478F581B80C48E00A379F1 /* SinaMicroBlog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinaMicroBlog-Prefix.pch"; sourceTree = "<group>"; };
+		C5478F591B80DB2B00A379F1 /* ZYMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYMainController.h; path = src/Main/Controller/ZYMainController.h; sourceTree = "<group>"; };
+		C5478F5A1B80DB2B00A379F1 /* ZYMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYMainController.m; path = src/Main/Controller/ZYMainController.m; sourceTree = "<group>"; };
+		C5478F5C1B80DB3F00A379F1 /* ZYNewfeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYNewfeatureController.h; path = src/Newfeature/ZYNewfeatureController.h; sourceTree = "<group>"; };
+		C5478F5D1B80DB3F00A379F1 /* ZYNewfeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYNewfeatureController.m; path = src/Newfeature/ZYNewfeatureController.m; sourceTree = "<group>"; };
+		C5478F5F1B80DB6A00A379F1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = src/Other/main.m; sourceTree = "<group>"; };
+		C5478F601B80DB6A00A379F1 /* SinaMicroBlog-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SinaMicroBlog-Prefix.pch"; path = "src/Other/SinaMicroBlog-Prefix.pch"; sourceTree = "<group>"; };
+		C5478F611B80DB6A00A379F1 /* ZYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYAppDelegate.h; path = src/Other/ZYAppDelegate.h; sourceTree = "<group>"; };
+		C5478F621B80DB6A00A379F1 /* ZYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYAppDelegate.m; path = src/Other/ZYAppDelegate.m; sourceTree = "<group>"; };
+		C5478F631B80DB6A00A379F1 /* ZYCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYCommon.h; path = src/Other/ZYCommon.h; sourceTree = "<group>"; };
 		C5D46A471B74A9C700BAF8EF /* ZYSinaMicroBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYSinaMicroBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D46A4B1B74A9C700BAF8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5D46A4C1B74A9C700BAF8EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5D46A551B74A9C700BAF8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5D46A571B74A9C700BAF8EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C5D46A771B74AAFD00BAF8EF /* ZYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAppDelegate.h; sourceTree = "<group>"; };
-		C5D46A781B74AAFD00BAF8EF /* ZYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAppDelegate.m; sourceTree = "<group>"; };
-		C5D46A7A1B75013800BAF8EF /* ZYCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCommon.h; sourceTree = "<group>"; };
-		C5D46A7B1B7501A000BAF8EF /* ZYNewfeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNewfeatureController.h; sourceTree = "<group>"; };
-		C5D46A7C1B7501A000BAF8EF /* ZYNewfeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNewfeatureController.m; sourceTree = "<group>"; };
-		C5D46A7E1B7501BF00BAF8EF /* ZYMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMainController.h; sourceTree = "<group>"; };
-		C5D46A7F1B7501BF00BAF8EF /* ZYMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMainController.m; sourceTree = "<group>"; };
 		C5D46A841B75042E00BAF8EF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C5D46A851B75042E00BAF8EF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C5D46A861B75042E00BAF8EF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
@@ -158,7 +158,6 @@
 			children = (
 				C5D46A811B75042E00BAF8EF /* Resource */,
 				C5D46A4B1B74A9C700BAF8EF /* Info.plist */,
-				C5478F581B80C48E00A379F1 /* SinaMicroBlog-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,8 +192,8 @@
 		C5D46A731B74AA5800BAF8EF /* Newfeature */ = {
 			isa = PBXGroup;
 			children = (
-				C5D46A7B1B7501A000BAF8EF /* ZYNewfeatureController.h */,
-				C5D46A7C1B7501A000BAF8EF /* ZYNewfeatureController.m */,
+				C5478F5C1B80DB3F00A379F1 /* ZYNewfeatureController.h */,
+				C5478F5D1B80DB3F00A379F1 /* ZYNewfeatureController.m */,
 			);
 			name = Newfeature;
 			sourceTree = "<group>";
@@ -202,10 +201,11 @@
 		C5D46A741B74AA5F00BAF8EF /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				C5D46A4C1B74A9C700BAF8EF /* main.m */,
-				C5D46A771B74AAFD00BAF8EF /* ZYAppDelegate.h */,
-				C5D46A781B74AAFD00BAF8EF /* ZYAppDelegate.m */,
-				C5D46A7A1B75013800BAF8EF /* ZYCommon.h */,
+				C5478F5F1B80DB6A00A379F1 /* main.m */,
+				C5478F601B80DB6A00A379F1 /* SinaMicroBlog-Prefix.pch */,
+				C5478F611B80DB6A00A379F1 /* ZYAppDelegate.h */,
+				C5478F621B80DB6A00A379F1 /* ZYAppDelegate.m */,
+				C5478F631B80DB6A00A379F1 /* ZYCommon.h */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -220,8 +220,8 @@
 		C5D46A761B74AA9300BAF8EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C5D46A7E1B7501BF00BAF8EF /* ZYMainController.h */,
-				C5D46A7F1B7501BF00BAF8EF /* ZYMainController.m */,
+				C5478F591B80DB2B00A379F1 /* ZYMainController.h */,
+				C5478F5A1B80DB2B00A379F1 /* ZYMainController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -398,10 +398,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D46A801B7501BF00BAF8EF /* ZYMainController.m in Sources */,
-				C5D46A7D1B7501A000BAF8EF /* ZYNewfeatureController.m in Sources */,
-				C5D46A791B74AAFD00BAF8EF /* ZYAppDelegate.m in Sources */,
-				C5D46A4D1B74A9C700BAF8EF /* main.m in Sources */,
+				C5478F5E1B80DB3F00A379F1 /* ZYNewfeatureController.m in Sources */,
+				C5478F651B80DB6A00A379F1 /* ZYAppDelegate.m in Sources */,
+				C5478F641B80DB6A00A379F1 /* main.m in Sources */,
+				C5478F5B1B80DB2B00A379F1 /* ZYMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

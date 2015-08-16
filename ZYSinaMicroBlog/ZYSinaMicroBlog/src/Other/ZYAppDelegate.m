@@ -27,7 +27,7 @@
     
     // 从沙盒中取出上次存储的版本号
     NSString *saveVersion = [[NSUserDefaults standardUserDefaults]objectForKey:key];
-    
+#if 0
     // 判断是否为第一次使用该版本，如果是则进入新特性展示，否则直接进入微博主界面
     if ([version isEqualToString:saveVersion]) {
         //用过此版本
@@ -39,6 +39,8 @@
         
         self.window.rootViewController = [[ZYNewfeatureController alloc]init];
     }
+#endif 
+    self.window.rootViewController = [[ZYNewfeatureController alloc]init];
     
     // 将窗口设置为显示，keyWindow为主窗口，只有主窗口才能与用户交互
     [self.window makeKeyAndVisible];

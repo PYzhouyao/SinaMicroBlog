@@ -7,6 +7,7 @@
 //
 
 #import "ZYNewfeatureController.h"
+#import "ZYMainController.h"
 #define kPicCount 4
 #define kPageControlW 150
 
@@ -64,8 +65,8 @@
         imageView.frame = CGRectMake(_size.width*i, 0, _size.width, _size.height);
         
         //
-        if ( kPicCount == i) {
-            imageView.userInteractionEnabled = YES;
+        if ( kPicCount-1  == i) {
+            imageView.userInteractionEnabled = YES;// 开启当前imageView用户交互属性
             [self addShareButton:imageView];
             [self addStartButton:imageView];
         }
@@ -105,8 +106,8 @@
     shareButton.adjustsImageWhenHighlighted = NO;
     
     // 设置按钮两个状态，循环点击时循环切换
-    UIImage *shareNomalImage = [UIImage imageNamed:@""];
-    UIImage *shareSelectedImage = [UIImage imageNamed:@""];
+    UIImage *shareNomalImage = [UIImage imageNamed:@"new_feature_share_false.png"];
+    UIImage *shareSelectedImage = [UIImage imageNamed:@"new_feature_share_true.png"];
     [shareButton setBackgroundImage:shareNomalImage forState:UIControlStateNormal];
     [shareButton setBackgroundImage:shareSelectedImage forState:UIControlStateSelected];
     
@@ -126,8 +127,8 @@
 {
     //创建按钮,设置尺寸宽高等属性
     UIButton *startButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *startNomalImage = [UIImage imageNamed:@""];
-    UIImage *startSelectImage = [UIImage imageNamed:@""];
+    UIImage *startNomalImage = [UIImage imageNamed:@"new_feature_finish_button.png"];
+    UIImage *startSelectImage = [UIImage imageNamed:@"new_feature_finish_button_highlighted.png"];
     [startButton setBackgroundImage:startNomalImage forState:UIControlStateNormal];
     [startButton setBackgroundImage:startSelectImage forState:UIControlStateSelected];
     startButton.center = CGPointMake(_size.width*0.5, _size.height*0.8);
@@ -146,7 +147,7 @@
 }
 -(void)startButtonEvent:(UIButton *)button{
     //切换回主页面
-    self.view.window.rootViewController = [[ZYNewfeatureController alloc]init];
+    self.view.window.rootViewController = [[ZYMainController alloc]init];
 }
 
 #pragma mark - scrollView代理方法
