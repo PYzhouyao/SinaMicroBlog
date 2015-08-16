@@ -1,0 +1,22 @@
+//
+//  SinaMicroBlog-Prefix.pch
+//  ZYSinaMicroBlog
+//
+//  Created by Yao.zhou on 15/8/16.
+//  Copyright (c) 2015年 Yao.zhou. All rights reserved.
+//
+
+#ifndef ZYSinaMicroBlog_SinaMicroBlog_Prefix_pch
+#define ZYSinaMicroBlog_SinaMicroBlog_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#import "SACommon.h"
+
+
+#endif

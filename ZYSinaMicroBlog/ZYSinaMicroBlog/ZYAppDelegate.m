@@ -20,18 +20,28 @@
     /*****************************************************************/
     
     // 版本号在info.plist中的key值
-    
+    NSString *key = (NSString *)kCFBundleVersionKey;
+   
     // 从info.plist中取出当前版本号
-    
+    NSString *version = [NSBundle mainBundle].infoDictionary[key];
     
     // 从沙盒中取出上次存储的版本号
-   
+    NSString *saveVersion = [[NSUserDefaults standardUserDefaults]objectForKey:key];
     
     // 判断是否为第一次使用该版本，如果是则进入新特性展示，否则直接进入微博主界面
-    
+    if ([version isEqualToString:saveVersion]) {
+        //用过此版本
+        self.window.rootViewController = [[ZYMainController alloc]init];
+    }
+    else{
+        [[NSUserDefaults standardUserDefaults]setObject:version forKey:key];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        self.window.rootViewController = [[ZYNewfeatureController alloc]init];
+    }
     
     // 将窗口设置为显示，keyWindow为主窗口，只有主窗口才能与用户交互
-    _window.rootViewController = [[ZYMainController alloc]init];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

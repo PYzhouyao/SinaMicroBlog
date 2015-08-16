@@ -100,12 +100,57 @@
 #pragma mark 分享按钮添加
 - (void)addShareButton:(UIImageView *)imageView         // 新特性展示最后一张图片中"分享"视图单独抽象成方法
 {
+    // 用按钮来实现"分享"视图
+    UIButton *shareButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    shareButton.adjustsImageWhenHighlighted = NO;
     
+    // 设置按钮两个状态，循环点击时循环切换
+    UIImage *shareNomalImage = [UIImage imageNamed:@""];
+    UIImage *shareSelectedImage = [UIImage imageNamed:@""];
+    [shareButton setBackgroundImage:shareNomalImage forState:UIControlStateNormal];
+    [shareButton setBackgroundImage:shareSelectedImage forState:UIControlStateSelected];
+    
+    // 设置按钮尺寸位置
+    shareButton.center = CGPointMake(_size.width*0.5, _size.height*0.7);
+    CGSize shareButtonSize = shareNomalImage.size;
+    shareButton.bounds = CGRectMake(0, 0, shareButtonSize.width, shareButtonSize.height);
+    shareButton.selected = YES;  // 默认为已选择状态
+    
+    // 创建按钮监听事件，每次点击都修改一次selected状态
+    [shareButton addTarget:self action:@selector(shareButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [imageView addSubview:shareButton];
 }
 
 #pragma mark 立即体验按钮添加
 - (void)addStartButton:(UIImageView *)imageView         // 新特性展示最后一张图片中"体验"按钮单独抽象成方法
 {
+    //创建按钮,设置尺寸宽高等属性
+    UIButton *startButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIImage *startNomalImage = [UIImage imageNamed:@""];
+    UIImage *startSelectImage = [UIImage imageNamed:@""];
+    [startButton setBackgroundImage:startNomalImage forState:UIControlStateNormal];
+    [startButton setBackgroundImage:startSelectImage forState:UIControlStateSelected];
+    startButton.center = CGPointMake(_size.width*0.5, _size.height*0.8);
+    CGSize startBtnSize = startNomalImage.size;
+    startButton.bounds = (CGRect){CGPointZero,startBtnSize};
     
+    //按钮监听事件。
+    [startButton addTarget:self action:@selector(startButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [imageView addSubview:startButton];
+}
+
+#pragma mark - 按钮事件处理方法
+#pragma mark 分享按钮事件处理
+-(void)shareButtonEvent:(UIButton *)button{               // "分享"按钮事件处理
+    button.selected = !button.selected;
+}
+-(void)startButtonEvent:(UIButton *)button{
+    //切换回主页面
+    self.view.window.rootViewController = [[ZYNewfeatureController alloc]init];
+}
+
+#pragma mark - scrollView代理方法
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    _pageControl.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
 }
 @end

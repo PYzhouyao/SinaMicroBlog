@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5478F541B80C36800A379F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5478F531B80C36800A379F1 /* UIKit.framework */; };
+		C5478F561B80C37700A379F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5478F551B80C37700A379F1 /* CoreGraphics.framework */; };
+		C5478F571B80C38900A379F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5478F501B80C32900A379F1 /* Foundation.framework */; };
 		C5D46A4D1B74A9C700BAF8EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A4C1B74A9C700BAF8EF /* main.m */; };
 		C5D46A561B74A9C700BAF8EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A541B74A9C700BAF8EF /* Main.storyboard */; };
 		C5D46A581B74A9C700BAF8EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A571B74A9C700BAF8EF /* Images.xcassets */; };
-		C5D46A671B74A9C700BAF8EF /* ZYSinaMicroBlogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A661B74A9C700BAF8EF /* ZYSinaMicroBlogTests.m */; };
 		C5D46A791B74AAFD00BAF8EF /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A781B74AAFD00BAF8EF /* ZYAppDelegate.m */; };
 		C5D46A7D1B7501A000BAF8EF /* ZYNewfeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A7C1B7501A000BAF8EF /* ZYNewfeatureController.m */; };
 		C5D46A801B7501BF00BAF8EF /* ZYMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D46A7F1B7501BF00BAF8EF /* ZYMainController.m */; };
@@ -48,25 +50,16 @@
 		C5D46AC51B75042E00BAF8EF /* new_feature_share_true@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D46AA41B75042E00BAF8EF /* new_feature_share_true@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C5D46A611B74A9C700BAF8EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5D46A3F1B74A9C700BAF8EF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5D46A461B74A9C700BAF8EF;
-			remoteInfo = ZYSinaMicroBlog;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		C5478F501B80C32900A379F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C5478F531B80C36800A379F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C5478F551B80C37700A379F1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C5478F581B80C48E00A379F1 /* SinaMicroBlog-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinaMicroBlog-Prefix.pch"; sourceTree = "<group>"; };
 		C5D46A471B74A9C700BAF8EF /* ZYSinaMicroBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYSinaMicroBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D46A4B1B74A9C700BAF8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5D46A4C1B74A9C700BAF8EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5D46A551B74A9C700BAF8EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5D46A571B74A9C700BAF8EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C5D46A601B74A9C700BAF8EF /* ZYSinaMicroBlogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYSinaMicroBlogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5D46A651B74A9C700BAF8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5D46A661B74A9C700BAF8EF /* ZYSinaMicroBlogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYSinaMicroBlogTests.m; sourceTree = "<group>"; };
 		C5D46A771B74AAFD00BAF8EF /* ZYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAppDelegate.h; sourceTree = "<group>"; };
 		C5D46A781B74AAFD00BAF8EF /* ZYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAppDelegate.m; sourceTree = "<group>"; };
 		C5D46A7A1B75013800BAF8EF /* ZYCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZYCommon.h; sourceTree = "<group>"; };
@@ -113,24 +106,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C5D46A5D1B74A9C700BAF8EF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C5478F571B80C38900A379F1 /* Foundation.framework in Frameworks */,
+				C5478F561B80C37700A379F1 /* CoreGraphics.framework in Frameworks */,
+				C5478F541B80C36800A379F1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5478F521B80C33400A379F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5478F551B80C37700A379F1 /* CoreGraphics.framework */,
+				C5478F531B80C36800A379F1 /* UIKit.framework */,
+				C5478F501B80C32900A379F1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5D46A3E1B74A9C700BAF8EF = {
 			isa = PBXGroup;
 			children = (
 				C5D46A491B74A9C700BAF8EF /* ZYSinaMicroBlog */,
-				C5D46A631B74A9C700BAF8EF /* ZYSinaMicroBlogTests */,
+				C5478F521B80C33400A379F1 /* Frameworks */,
 				C5D46A481B74A9C700BAF8EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				C5D46A471B74A9C700BAF8EF /* ZYSinaMicroBlog.app */,
-				C5D46A601B74A9C700BAF8EF /* ZYSinaMicroBlogTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,23 +158,7 @@
 			children = (
 				C5D46A811B75042E00BAF8EF /* Resource */,
 				C5D46A4B1B74A9C700BAF8EF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C5D46A631B74A9C700BAF8EF /* ZYSinaMicroBlogTests */ = {
-			isa = PBXGroup;
-			children = (
-				C5D46A661B74A9C700BAF8EF /* ZYSinaMicroBlogTests.m */,
-				C5D46A641B74A9C700BAF8EF /* Supporting Files */,
-			);
-			path = ZYSinaMicroBlogTests;
-			sourceTree = "<group>";
-		};
-		C5D46A641B74A9C700BAF8EF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C5D46A651B74A9C700BAF8EF /* Info.plist */,
+				C5478F581B80C48E00A379F1 /* SinaMicroBlog-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -335,24 +317,6 @@
 			productReference = C5D46A471B74A9C700BAF8EF /* ZYSinaMicroBlog.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C5D46A5F1B74A9C700BAF8EF /* ZYSinaMicroBlogTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C5D46A6D1B74A9C700BAF8EF /* Build configuration list for PBXNativeTarget "ZYSinaMicroBlogTests" */;
-			buildPhases = (
-				C5D46A5C1B74A9C700BAF8EF /* Sources */,
-				C5D46A5D1B74A9C700BAF8EF /* Frameworks */,
-				C5D46A5E1B74A9C700BAF8EF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5D46A621B74A9C700BAF8EF /* PBXTargetDependency */,
-			);
-			name = ZYSinaMicroBlogTests;
-			productName = ZYSinaMicroBlogTests;
-			productReference = C5D46A601B74A9C700BAF8EF /* ZYSinaMicroBlogTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -364,10 +328,6 @@
 				TargetAttributes = {
 					C5D46A461B74A9C700BAF8EF = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					C5D46A5F1B74A9C700BAF8EF = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = C5D46A461B74A9C700BAF8EF;
 					};
 				};
 			};
@@ -385,7 +345,6 @@
 			projectRoot = "";
 			targets = (
 				C5D46A461B74A9C700BAF8EF /* ZYSinaMicroBlog */,
-				C5D46A5F1B74A9C700BAF8EF /* ZYSinaMicroBlogTests */,
 			);
 		};
 /* End PBXProject section */
@@ -432,13 +391,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5D46A5E1B74A9C700BAF8EF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -453,23 +405,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5D46A5C1B74A9C700BAF8EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C5D46A671B74A9C700BAF8EF /* ZYSinaMicroBlogTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C5D46A621B74A9C700BAF8EF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5D46A461B74A9C700BAF8EF /* ZYSinaMicroBlog */;
-			targetProxy = C5D46A611B74A9C700BAF8EF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C5D46A541B74A9C700BAF8EF /* Main.storyboard */ = {
@@ -585,40 +521,6 @@
 			};
 			name = Release;
 		};
-		C5D46A6E1B74A9C700BAF8EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZYSinaMicroBlogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYSinaMicroBlog.app/ZYSinaMicroBlog";
-			};
-			name = Debug;
-		};
-		C5D46A6F1B74A9C700BAF8EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ZYSinaMicroBlogTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYSinaMicroBlog.app/ZYSinaMicroBlog";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -638,14 +540,7 @@
 				C5D46A6C1B74A9C700BAF8EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		C5D46A6D1B74A9C700BAF8EF /* Build configuration list for PBXNativeTarget "ZYSinaMicroBlogTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5D46A6E1B74A9C700BAF8EF /* Debug */,
-				C5D46A6F1B74A9C700BAF8EF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
