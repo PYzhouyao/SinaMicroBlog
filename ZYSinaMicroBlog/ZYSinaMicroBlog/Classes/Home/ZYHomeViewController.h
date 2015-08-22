@@ -1,5 +1,5 @@
 //
-//  ZYDockController.h
+//  ZYHomeViewController.h
 //  ZYSinaMicroBlog
 //
 //  Created by Yao on 15/8/22.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class ZYDock;
-
-@interface ZYDockController : UIViewController
-
-@property (nonatomic,strong)ZYDock *dock;
+@interface ZYHomeViewController : UIViewController
 
 @end

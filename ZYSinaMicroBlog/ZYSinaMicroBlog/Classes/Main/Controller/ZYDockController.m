@@ -7,8 +7,10 @@
 //
 
 #import "ZYDockController.h"
+#import "ZYDock.h"
 
-@interface ZYDockController ()
+
+@interface ZYDockController ()<ZYDockDelegate>
 
 @end
 
@@ -16,22 +18,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)addDock{
+    self.dock = [[ZYDock alloc]init];
+    self.dock.delegate = self;
+    
+    self.dock.frame = CGRectMake(0, self.view.frame.size.height - kDockHeight, self.view.frame.size.width, kDockHeight);
+    
+    [self.view addSubview:self.dock];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)dock:(ZYDock *)dock itemSelectFrol:(NSInteger)sourceIndex to:(NSInteger)toIndex;{
+    
+    if (toIndex < 0 || toIndex >= self.childViewControllers.count) return;
+    
+    // 1、移除之前的View
+    UIViewController *oldController = self.childViewControllers[sourceIndex];
+    [oldController.view removeFromSuperview];
+    
+    // 2、展示当前的View并设置尺寸位置
+    UIViewController *newViewControl = self.childViewControllers[toIndex];
+    CGFloat width = self.view.frame.size.width;
+    CGFloat height = self.view.frame.size.height - dock.frame.size.height;
+    newViewControl.view.frame = CGRectMake(0, 0, width, height);
+    [self.view addSubview:newViewControl.view];
 }
-*/
+
 
 @end

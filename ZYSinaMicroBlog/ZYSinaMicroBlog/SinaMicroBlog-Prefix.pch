@@ -16,7 +16,10 @@
 #import <Foundation/Foundation.h>
 #endif
 
-#import "SACommon.h"
+#import "ZYCommon.h"
+
+#define kDockHeight 44
+#define kBackgroundImageName @"tabbar_background.png"
 
 
 #endif

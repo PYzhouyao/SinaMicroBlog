@@ -18,7 +18,7 @@
 @interface ZYDock : UIView
 
 // Dock中的按钮抽取出来做为成员变量方便事件响应与方法传递
-@property (nonatomic,strong)ZYDockItem *item;
+@property (nonatomic,strong)ZYDockItem *SelectedItem;
 
 // 定义一个代理属性，将Dock中的按钮事件供外界调用
 @property (nonatomic,assign)id<ZYDockDelegate> delegate;

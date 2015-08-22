@@ -13,9 +13,13 @@
 
 // 用MyLog替代NSLog，调试时输出日志，正式发布时自动取消日志输出代码
 #ifdef DEBUG
-#define MyLog(...) NSLog(__VA_ARGS__)
+#define ZYLog(...) NSLog(__VA_ARGS__)
 #else
-#define MyLog(...)
+#define ZYLog(...)
 #endif
+
+//所有的工具类头文件由这里统一导入
+#import "ZYNavigationController.h"
+
 
 #endif
