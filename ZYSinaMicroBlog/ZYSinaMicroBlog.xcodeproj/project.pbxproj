@@ -15,6 +15,10 @@
 		C951F19A1B884A9500CECA01 /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1971B884A9500CECA01 /* ZYAppDelegate.m */; };
 		C951F19E1B884ACF00CECA01 /* ZYNewfeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F19D1B884ACF00CECA01 /* ZYNewfeatureController.m */; };
 		C951F1A11B884ADE00CECA01 /* ZYMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1A01B884ADE00CECA01 /* ZYMainController.m */; };
+		C951F1A41B88578800CECA01 /* ZYDockController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1A31B88578800CECA01 /* ZYDockController.m */; };
+		C951F1A71B8857EE00CECA01 /* ZYDock.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1A61B8857EE00CECA01 /* ZYDock.m */; };
+		C951F1AA1B8858E100CECA01 /* ZYDockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1A91B8858E100CECA01 /* ZYDockItem.m */; };
+		C951F1AD1B88594B00CECA01 /* ZYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1AC1B88594B00CECA01 /* ZYNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,14 @@
 		C951F19D1B884ACF00CECA01 /* ZYNewfeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYNewfeatureController.m; path = Classes/Newfeature/ZYNewfeatureController.m; sourceTree = "<group>"; };
 		C951F19F1B884ADE00CECA01 /* ZYMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYMainController.h; path = Classes/Main/Controller/ZYMainController.h; sourceTree = "<group>"; };
 		C951F1A01B884ADE00CECA01 /* ZYMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYMainController.m; path = Classes/Main/Controller/ZYMainController.m; sourceTree = "<group>"; };
+		C951F1A21B88578800CECA01 /* ZYDockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYDockController.h; path = Classes/Main/Controller/ZYDockController.h; sourceTree = "<group>"; };
+		C951F1A31B88578800CECA01 /* ZYDockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYDockController.m; path = Classes/Main/Controller/ZYDockController.m; sourceTree = "<group>"; };
+		C951F1A51B8857EE00CECA01 /* ZYDock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYDock.h; path = Classes/Main/View/ZYDock.h; sourceTree = "<group>"; };
+		C951F1A61B8857EE00CECA01 /* ZYDock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYDock.m; path = Classes/Main/View/ZYDock.m; sourceTree = "<group>"; };
+		C951F1A81B8858E100CECA01 /* ZYDockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYDockItem.h; path = Classes/Main/View/ZYDockItem.h; sourceTree = "<group>"; };
+		C951F1A91B8858E100CECA01 /* ZYDockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYDockItem.m; path = Classes/Main/View/ZYDockItem.m; sourceTree = "<group>"; };
+		C951F1AB1B88594B00CECA01 /* ZYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYNavigationController.h; path = Classes/Other/ZYNavigationController.h; sourceTree = "<group>"; };
+		C951F1AC1B88594B00CECA01 /* ZYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYNavigationController.m; path = Classes/Other/ZYNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,8 @@
 				C951F1961B884A9500CECA01 /* ZYAppDelegate.h */,
 				C951F1971B884A9500CECA01 /* ZYAppDelegate.m */,
 				C951F1981B884A9500CECA01 /* ZYCommon.h */,
+				C951F1AB1B88594B00CECA01 /* ZYNavigationController.h */,
+				C951F1AC1B88594B00CECA01 /* ZYNavigationController.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -150,6 +164,10 @@
 		C5D46A751B74AA8D00BAF8EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C951F1A51B8857EE00CECA01 /* ZYDock.h */,
+				C951F1A61B8857EE00CECA01 /* ZYDock.m */,
+				C951F1A81B8858E100CECA01 /* ZYDockItem.h */,
+				C951F1A91B8858E100CECA01 /* ZYDockItem.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -159,6 +177,8 @@
 			children = (
 				C951F19F1B884ADE00CECA01 /* ZYMainController.h */,
 				C951F1A01B884ADE00CECA01 /* ZYMainController.m */,
+				C951F1A21B88578800CECA01 /* ZYDockController.h */,
+				C951F1A31B88578800CECA01 /* ZYDockController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -267,7 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C951F19E1B884ACF00CECA01 /* ZYNewfeatureController.m in Sources */,
+				C951F1AA1B8858E100CECA01 /* ZYDockItem.m in Sources */,
+				C951F1AD1B88594B00CECA01 /* ZYNavigationController.m in Sources */,
+				C951F1A41B88578800CECA01 /* ZYDockController.m in Sources */,
 				C951F1A11B884ADE00CECA01 /* ZYMainController.m in Sources */,
+				C951F1A71B8857EE00CECA01 /* ZYDock.m in Sources */,
 				C951F19A1B884A9500CECA01 /* ZYAppDelegate.m in Sources */,
 				C951F1991B884A9500CECA01 /* main.m in Sources */,
 			);
