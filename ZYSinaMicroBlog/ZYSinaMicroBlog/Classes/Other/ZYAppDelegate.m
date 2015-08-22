@@ -18,7 +18,7 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     /*****************************************************************/
-    
+#if 0
     // 版本号在info.plist中的key值
     NSString *key = (NSString *)kCFBundleVersionKey;
    
@@ -27,7 +27,7 @@
     
     // 从沙盒中取出上次存储的版本号
     NSString *saveVersion = [[NSUserDefaults standardUserDefaults]objectForKey:key];
-#if 0
+
     // 判断是否为第一次使用该版本，如果是则进入新特性展示，否则直接进入微博主界面
     if ([version isEqualToString:saveVersion]) {
         //用过此版本
