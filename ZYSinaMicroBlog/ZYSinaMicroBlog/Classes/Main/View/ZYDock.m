@@ -7,15 +7,14 @@
 //
 
 #import "ZYDock.h"
+#import "ZYDockItem.h"
+
+#
 
 @implementation ZYDock
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
+-(void)addItemWithIcon:(NSString *)iconName selectedIcon:(NSString *)selectedIconName title:(NSString *)title{
+    
+}
 @end
