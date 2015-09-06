@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>0D870DF8-634D-4383-8BE3-63C47216F86F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ZYSinaMicroBlog</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0627C3B1444D1A83CB139B13A12D41EBAEF5B62C</key>
 		<string>github.com:PYzhouyao/SinaMicroBlog.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ZYSinaMicroBlog/ZYSinaMicroBlog.xcodeproj/project.xcworkspace</string>
+	<string>ZYSinaMicroBlog/ZYSinaMicroBlog.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0627C3B1444D1A83CB139B13A12D41EBAEF5B62C</key>

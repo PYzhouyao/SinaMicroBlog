@@ -11,6 +11,8 @@
 #import "ZYMoreViewController.h"
 #import "ZYMessageViewController.h"
 #import "ZYHomeViewController.h"
+#import "ZYNavigationController.h"
+#import "ZYProfileController.h"
 
 @implementation ZYMainController
 
@@ -18,54 +20,44 @@
     
     [super viewDidLoad];
     
-    // 临时Label
-//    self.view.backgroundColor = [UIColor whiteColor];
-//    UILabel *tempLable = [[UILabel alloc] init];
-//    tempLable.center = self.view.center;
-//    tempLable.bounds = CGRectMake(0, 0, self.view.frame.size.width * 0.8, 50);
-//    tempLable.text = @"微博主界面建设中...";
-//    tempLable.textColor = [UIColor blueColor];
-//    tempLable.textAlignment = NSTextAlignmentCenter;
-//    tempLable.font = [UIFont systemFontOfSize:25];
-//    [self.view addSubview:tempLable];
-
+    [self addSubView];
     
-    
+    [self addDockItems];
 }
-
--(void)addDockItem{
-    
+#pragma mark 添加Dock控件到首页控制器
+- (void)addDockItems{
+    [self.dock addItemWithIcon:@"tabbar_home.png" selectedIcon:@"tabbar_home_selected.png" title:@"首页"];
 }
 
 -(void)addSubView{
     // 添加"首页"视图
     ZYHomeViewController *homeControl = [[ZYHomeViewController alloc] init];
     homeControl.view.backgroundColor = [UIColor grayColor];
-    //SANavigationController *homeNav = [[SANavigationController alloc] initWithRootViewController:homeControl];
-    //[self addChildViewController:homeNav];
+    ZYNavigationController *homeNav = [[ZYNavigationController alloc] initWithRootViewController:homeControl];
+    [self addChildViewController:homeNav];
     
-//    // 添加"消息"视图
-//    SAMessageController *messageControl = [[SAMessageController alloc] init];
-//    messageControl.view.backgroundColor = [UIColor greenColor];
-//    SANavigationController *messageNav = [[SANavigationController alloc] initWithRootViewController:messageControl];
-//    [self addChildViewController:messageNav];
-//    
-//    // 添加"我"视图
-//    SAProfileController *profileControl = [[SAProfileController alloc] init];
-//    profileControl.view.backgroundColor = [UIColor yellowColor];
-//    SANavigationController *profileNav = [[SANavigationController alloc] initWithRootViewController:profileControl];
-//    [self addChildViewController:profileNav];
-//    
-//    // 添加"广场"视图
-//    SADiscoverController *discoverControl = [[SADiscoverController alloc] init];
-//    discoverControl.view.backgroundColor = [UIColor blueColor];
-//    SANavigationController *discoverNav = [[SANavigationController alloc] initWithRootViewController:discoverControl];
-//    [self addChildViewController:discoverNav];
-//    
-//    // 添加"更多"视图
-//    SAMoreController *moreControl = [[SAMoreController alloc] init];
-//    SANavigationController *moreNav = [[SANavigationController alloc] initWithRootViewController:moreControl];
-//    [self addChildViewController:moreNav];
+    // 添加"消息"视图
+    ZYMessageViewController *messageControl = [[ZYMessageViewController alloc] init];
+    messageControl.view.backgroundColor = [UIColor greenColor];
+    ZYNavigationController *messageNav = [[ZYNavigationController alloc] initWithRootViewController:messageControl];
+    [self addChildViewController:messageNav];
+    
+    // 添加"我"视图
+    ZYProfileController *profileControl = [[ZYProfileController alloc] init];
+    profileControl.view.backgroundColor = [UIColor yellowColor];
+    ZYNavigationController *profileNav = [[ZYNavigationController alloc] initWithRootViewController:profileControl];
+    [self addChildViewController:profileNav];
+    
+    // 添加"广场"视图
+    ZYDiscoverViewController *discoverControl = [[ZYDiscoverViewController alloc] init];
+    discoverControl.view.backgroundColor = [UIColor blueColor];
+    ZYNavigationController *discoverNav = [[ZYNavigationController alloc] initWithRootViewController:discoverControl];
+    [self addChildViewController:discoverNav];
+    
+    // 添加"更多"视图
+    ZYMoreViewController *moreControl = [[ZYMoreViewController alloc] init];
+    ZYNavigationController *moreNav = [[ZYNavigationController alloc] initWithRootViewController:moreControl];
+    [self addChildViewController:moreNav];
 }
 
 @end

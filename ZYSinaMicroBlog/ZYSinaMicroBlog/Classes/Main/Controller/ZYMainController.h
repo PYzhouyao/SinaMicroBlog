@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ZYMainController : UIViewController
+#import "ZYDockController.h"
+@interface ZYMainController : ZYDockController
 
 @end

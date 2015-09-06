@@ -18,14 +18,20 @@
     [super viewDidLoad];
     
     UINavigationBar *bar = [UINavigationBar appearance];
-    //
+    
+    // 修改导航条背景
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbar_background.png"] forBarMetrics:UIBarMetricsDefault];
+    
+    // 修改导航条文字样式
     NSShadow * shardow = [[NSShadow alloc]init];
     [shardow setShadowOffset:CGSizeZero];
     [bar setTitleTextAttributes:@{
                                   NSForegroundColorAttributeName:[UIColor grayColor],
                                   NSShadowAttributeName:shardow
                                   } ];
+    
+    // 修改状态栏样式
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
 @end

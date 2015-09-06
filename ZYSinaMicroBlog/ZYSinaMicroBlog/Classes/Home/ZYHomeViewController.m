@@ -7,16 +7,28 @@
 //
 
 #import "ZYHomeViewController.h"
-
+#import ""
 @interface ZYHomeViewController ()
 
 @end
 
 @implementation ZYHomeViewController
 
+- (id)initWtihStyle:(UITableViewStyle)style{
+    self = [super initWithStyle:style];
+    if (self) {
+        //
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.title = @"首页";
+    
+    //
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"navigationbar_compose.png" highLightedImageName:@"navigationbar_compose_highlighted.png" addTarget:self action:@selector(leftButtonClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {

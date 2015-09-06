@@ -1,13 +1,13 @@
 //
-//  ZYHomeViewController.h
+//  ZYProfileController.h
 //  ZYSinaMicroBlog
 //
-//  Created by Yao on 15/8/22.
+//  Created by Yao.zhou on 15/9/4.
 //  Copyright (c) 2015年 Yao.zhou. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ZYHomeViewController : UITableViewController
+@interface ZYProfileController : UIViewController
 
 @end
