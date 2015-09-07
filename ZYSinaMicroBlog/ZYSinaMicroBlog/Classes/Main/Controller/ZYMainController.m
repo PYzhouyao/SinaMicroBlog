@@ -14,7 +14,11 @@
 #import "ZYNavigationController.h"
 #import "ZYProfileController.h"
 
-@implementation ZYMainController
+@interface ZYMainController () <ZYDockDelegate>
+
+@end
+
+@implementation ZYMainController 
 
 -(void)viewDidLoad{
     
@@ -27,6 +31,11 @@
 #pragma mark 添加Dock控件到首页控制器
 - (void)addDockItems{
     [self.dock addItemWithIcon:@"tabbar_home.png" selectedIcon:@"tabbar_home_selected.png" title:@"首页"];
+    [self.dock addItemWithIcon:@"tabbar_message_center.png" selectedIcon:@"tabbar_message_center_selected.png" title:@"消息"];
+    [self.dock addItemWithIcon:@"tabbar_profile.png" selectedIcon:@"tabbar_profile_selected.png" title:@"我"];
+    [self.dock addItemWithIcon:@"tabbar_discover.png" selectedIcon:@"tabbar_discover_selected.png" title:@"广场"];
+    [self.dock addItemWithIcon:@"tabbar_more.png" selectedIcon:@"tabbar_more_selected.png" title:@"更多"];
+
 }
 
 -(void)addSubView{

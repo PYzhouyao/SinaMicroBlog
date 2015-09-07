@@ -146,6 +146,7 @@
     button.selected = !button.selected;
 }
 -(void)startButtonEvent:(UIButton *)button{
+    [UIApplication sharedApplication].statusBarHidden = NO;
     //切换回主页面
     self.view.window.rootViewController = [[ZYMainController alloc]init];
 }

@@ -7,7 +7,7 @@
 //
 
 #import "ZYHomeViewController.h"
-#import ""
+
 @interface ZYHomeViewController ()
 
 @end
@@ -27,8 +27,8 @@
     
     self.title = @"首页";
     
-    //
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"navigationbar_compose.png" highLightedImageName:@"navigationbar_compose_highlighted.png" addTarget:self action:@selector(leftButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    // 用自定的分类方法给导航条添加左边按钮
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,8 +7,6 @@
 //
 
 #import "ZYDockController.h"
-#import "ZYDock.h"
-
 
 @interface ZYDockController ()<ZYDockDelegate>
 

@@ -24,6 +24,7 @@
 		C951F1B31B88726F00CECA01 /* ZYMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1B21B88726F00CECA01 /* ZYMoreViewController.m */; };
 		C951F1B61B88728000CECA01 /* ZYDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1B51B88728000CECA01 /* ZYDiscoverViewController.m */; };
 		C951F1B91B8872B900CECA01 /* ZYMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1B81B8872B900CECA01 /* ZYMessageViewController.m */; };
+		C96691241B9D44AD0012FF0C /* UIBarButtonItem+ZY.m in Sources */ = {isa = PBXBuildFile; fileRef = C96691231B9D44AD0012FF0C /* UIBarButtonItem+ZY.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		C951F1B51B88728000CECA01 /* ZYDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYDiscoverViewController.m; path = Classes/Discover/ZYDiscoverViewController.m; sourceTree = "<group>"; };
 		C951F1B71B8872B900CECA01 /* ZYMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYMessageViewController.h; path = Classes/Message/ZYMessageViewController.h; sourceTree = "<group>"; };
 		C951F1B81B8872B900CECA01 /* ZYMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYMessageViewController.m; path = Classes/Message/ZYMessageViewController.m; sourceTree = "<group>"; };
+		C96691221B9D44AD0012FF0C /* UIBarButtonItem+ZY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+ZY.h"; path = "Classes/Category/UIBarButtonItem+ZY.h"; sourceTree = "<group>"; };
+		C96691231B9D44AD0012FF0C /* UIBarButtonItem+ZY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+ZY.m"; path = "Classes/Category/UIBarButtonItem+ZY.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 		C5D46A711B74AA2F00BAF8EF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C96691221B9D44AD0012FF0C /* UIBarButtonItem+ZY.h */,
+				C96691231B9D44AD0012FF0C /* UIBarButtonItem+ZY.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				C951F1A71B8857EE00CECA01 /* ZYDock.m in Sources */,
 				C951F19A1B884A9500CECA01 /* ZYAppDelegate.m in Sources */,
 				C951F1991B884A9500CECA01 /* main.m in Sources */,
+				C96691241B9D44AD0012FF0C /* UIBarButtonItem+ZY.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

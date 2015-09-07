@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZYDock.h"
 
-@class ZYDock;
 
 @interface ZYDockController : UIViewController
 

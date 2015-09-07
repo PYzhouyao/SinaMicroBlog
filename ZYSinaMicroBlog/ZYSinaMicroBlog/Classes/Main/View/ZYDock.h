@@ -15,6 +15,7 @@
 -(void)dock:(ZYDock *)dock itemSelectFrol:(NSInteger)sourceIndex to:(NSInteger)toIndex;
 @end
 
+
 @interface ZYDock : UIView
 
 // Dock中的按钮抽取出来做为成员变量方便事件响应与方法传递
