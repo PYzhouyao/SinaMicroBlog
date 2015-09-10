@@ -57,8 +57,8 @@
 -(void)itemEvent:(ZYDockItem *)item{
     
     // 0、通知代理
-    if ([self.delegate respondsToSelector:@selector(dock:itemSelectFrol:to:)]) {
-        [self.delegate dock:self itemSelectFrol:(NSInteger)self.SelectedItem.tag to:(NSInteger)item.tag];
+    if ([_delegate respondsToSelector:@selector(dock:itemSelectFrom:to:)]) {
+        [_delegate dock:self itemSelectFrom:(NSInteger)self.SelectedItem.tag to:(NSInteger)item.tag];
     }
     
     // 1、取消之前按钮的select状态

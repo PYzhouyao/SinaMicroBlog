@@ -34,7 +34,7 @@
 
 #pragma mark 首页控制器上View的切换
 // Dock的代理方法，当Dock上按钮被点击时，切换相应的View到当前控制器上显示
--(void)dock:(ZYDock *)dock itemSelectFrom:(NSInteger)sourceIndex to:(NSInteger)toIndex;{
+- (void)dock:(ZYDock *)dock itemSelectFrom:(NSInteger)sourceIndex to:(NSInteger)toIndex{
     
     if (toIndex < 0 || toIndex >= self.childViewControllers.count) return;
     

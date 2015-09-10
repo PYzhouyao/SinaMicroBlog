@@ -7,6 +7,7 @@
 //
 
 #import "ZYHomeViewController.h"
+#import "UIBarButtonItem+ZY.h"
 
 @interface ZYHomeViewController ()
 
@@ -28,22 +29,29 @@
     self.title = @"首页";
     
     // 用自定的分类方法给导航条添加左边按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"navigationbar_compose.png" highLightedImageName:@"navigationbar_compose_highlighted.png" addTarget:self action:@selector(leftButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    
+    // 用自定的分类方法给导航条添加右边按钮
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem barButtonItemWithImageName:@"navigationbar_pop.png" highLightedImageName:@"navigationbar_pop_highlighted.png" addTarget:self action:@selector(rightButtonClick) forControlEvents:UIControlEventTouchUpInside];
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark 首页导航左按钮事件
+- (void)leftButtonClick
+{
+    ZYLog(@"首页左按钮");
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark 首页导航右按钮事件
+- (void)rightButtonClick
+{
+    ZYLog(@"首页右按钮");
 }
-*/
+
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
 
 @end

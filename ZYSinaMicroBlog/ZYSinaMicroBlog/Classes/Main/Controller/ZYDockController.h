@@ -10,7 +10,7 @@
 #import "ZYDock.h"
 
 
-@interface ZYDockController : UIViewController
+@interface ZYDockController : UIViewController<ZYDockDelegate>
 
 @property (nonatomic,strong)ZYDock *dock;
 

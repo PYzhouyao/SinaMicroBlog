@@ -12,7 +12,7 @@
 #pragma mark ZYDock协议
 @protocol ZYDockDelegate<NSObject>
 @optional
--(void)dock:(ZYDock *)dock itemSelectFrol:(NSInteger)sourceIndex to:(NSInteger)toIndex;
+- (void)dock:(ZYDock *)dock itemSelectFrom:(NSInteger)sourceIndex to:(NSInteger)toIndex;
 @end
 
 
