@@ -12,6 +12,8 @@
 		C5478F571B80C38900A379F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5478F501B80C32900A379F1 /* Foundation.framework */; };
 		C57C85671B99537A00ED2C29 /* ZYProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57C85661B99537A00ED2C29 /* ZYProfileController.m */; };
 		C5D46A581B74A9C700BAF8EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5D46A571B74A9C700BAF8EF /* Images.xcassets */; };
+		C93194371BA2B5F800890E5E /* More.plist in Resources */ = {isa = PBXBuildFile; fileRef = C93194361BA2B5F800890E5E /* More.plist */; settings = {ASSET_TAGS = (); }; };
+		C931943A1BA2B69700890E5E /* ZYMoreTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = C93194391BA2B69700890E5E /* ZYMoreTableData.m */; settings = {ASSET_TAGS = (); }; };
 		C951F1991B884A9500CECA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1951B884A9500CECA01 /* main.m */; };
 		C951F19A1B884A9500CECA01 /* ZYAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F1971B884A9500CECA01 /* ZYAppDelegate.m */; };
 		C951F19E1B884ACF00CECA01 /* ZYNewfeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = C951F19D1B884ACF00CECA01 /* ZYNewfeatureController.m */; };
@@ -129,6 +131,9 @@
 		C5D46A471B74A9C700BAF8EF /* ZYSinaMicroBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYSinaMicroBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5D46A4B1B74A9C700BAF8EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5D46A571B74A9C700BAF8EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C93194361BA2B5F800890E5E /* More.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = More.plist; sourceTree = "<group>"; };
+		C93194381BA2B69700890E5E /* ZYMoreTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYMoreTableData.h; path = Classes/More/ZYMoreTableData.h; sourceTree = "<group>"; };
+		C93194391BA2B69700890E5E /* ZYMoreTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYMoreTableData.m; path = Classes/More/ZYMoreTableData.m; sourceTree = "<group>"; };
 		C951F1951B884A9500CECA01 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/Other/main.m; sourceTree = "<group>"; };
 		C951F1961B884A9500CECA01 /* ZYAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZYAppDelegate.h; path = Classes/Other/ZYAppDelegate.h; sourceTree = "<group>"; };
 		C951F1971B884A9500CECA01 /* ZYAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZYAppDelegate.m; path = Classes/Other/ZYAppDelegate.m; sourceTree = "<group>"; };
@@ -390,6 +395,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		C93194351BA2B5F800890E5E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C93194361BA2B5F800890E5E /* More.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		C951F18F1B8848E700CECA01 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,8 +433,10 @@
 		C951F1921B88490D00CECA01 /* More */ = {
 			isa = PBXGroup;
 			children = (
-				C951F1B21B88726F00CECA01 /* ZYMoreViewController.m */,
 				C951F1B11B88726F00CECA01 /* ZYMoreViewController.h */,
+				C951F1B21B88726F00CECA01 /* ZYMoreViewController.m */,
+				C93194381BA2B69700890E5E /* ZYMoreTableData.h */,
+				C93194391BA2B69700890E5E /* ZYMoreTableData.m */,
 			);
 			name = More;
 			sourceTree = "<group>";
@@ -438,6 +453,7 @@
 		C966912B1BA18B460012FF0C /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C93194351BA2B5F800890E5E /* Data */,
 				C966912C1BA18B460012FF0C /* Image */,
 				C96691901BA18B460012FF0C /* Music */,
 			);
@@ -711,6 +727,7 @@
 				C96691D91BA18B460012FF0C /* new_feature_3.png in Resources */,
 				C96691CE1BA18B460012FF0C /* navigationbar_more.png in Resources */,
 				C96691A41BA18B460012FF0C /* tabbar_more_selected@2x.png in Resources */,
+				C93194371BA2B5F800890E5E /* More.plist in Resources */,
 				C96691DC1BA18B460012FF0C /* new_feature_4.png in Resources */,
 				C96691C21BA18B460012FF0C /* navigationbar_button_background.png in Resources */,
 				C96691C71BA18B460012FF0C /* navigationbar_button_background_disabled@2x.png in Resources */,
@@ -773,6 +790,7 @@
 				C951F1A71B8857EE00CECA01 /* ZYDock.m in Sources */,
 				C951F19A1B884A9500CECA01 /* ZYAppDelegate.m in Sources */,
 				C951F1991B884A9500CECA01 /* main.m in Sources */,
+				C931943A1BA2B69700890E5E /* ZYMoreTableData.m in Sources */,
 				C96691241B9D44AD0012FF0C /* UIBarButtonItem+ZY.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZYMoreViewController : UIViewController
+@interface ZYMoreViewController : UITableViewController
 
 @end
