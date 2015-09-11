@@ -18,11 +18,11 @@
     _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     /*****************************************************************/
-#if 0
+#if 1
     // 版本号在info.plist中的key值
     NSString *key = (NSString *)kCFBundleVersionKey;
    
-    // 从info.plist中取出当前版本号
+    // 根据key 从info.plist中取出当前版本号
     NSString *version = [NSBundle mainBundle].infoDictionary[key];
     
     // 从沙盒中取出上次存储的版本号
@@ -34,6 +34,7 @@
         self.window.rootViewController = [[ZYMainController alloc]init];
     }
     else{
+        //没用过此版本 保存版本号,展示新特性
         [[NSUserDefaults standardUserDefaults]setObject:version forKey:key];
         [[NSUserDefaults standardUserDefaults] synchronize];
         

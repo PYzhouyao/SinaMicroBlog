@@ -7,9 +7,6 @@
 //
 
 #import "ZYDockItem.h"
-#define kPercentage 0.6
-#define kBgImageName @"tabbar_slider.png"
-
 
 @implementation ZYDockItem
 #pragma mark 按钮初始化状态
@@ -26,7 +23,7 @@
         self.titleLabel.font = [UIFont systemFontOfSize:12];
         
         //4、设置selected状态背景
-        [self setBackgroundImage:[UIImage imageNamed:kBackgroundImageName] forState:UIControlStateSelected];
+        [self setBackgroundImage:[UIImage imageNamed:kBgImageName] forState:UIControlStateSelected];
     }
     return self;
 }
