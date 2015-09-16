@@ -18,9 +18,10 @@ typedef enum {
 
 @interface ZYTableViewCell : UITableViewCell
 
-@property (nonatomic, readonly) UILabel     *accessoryLabel;
 @property (nonatomic, assign) CellType      cellType;
+@property (nonatomic, readonly) UILabel     *accessoryLabel;
 @property (nonatomic, strong) UISwitch      *accessorySwitch;
+
 
 - (void)setGroupCellStyleWithTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 

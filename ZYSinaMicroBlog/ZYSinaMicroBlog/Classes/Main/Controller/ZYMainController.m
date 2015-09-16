@@ -11,7 +11,6 @@
 #import "ZYMoreViewController.h"
 #import "ZYMessageViewController.h"
 #import "ZYHomeViewController.h"
-#import "ZYNavigationController.h"
 #import "ZYProfileController.h"
 
 @interface ZYMainController () <ZYDockDelegate>
@@ -34,30 +33,30 @@
     // 添加"首页"视图
     ZYHomeViewController *homeControl = [[ZYHomeViewController alloc] init];
     homeControl.view.backgroundColor = [UIColor grayColor];
-    ZYNavigationController *homeNav = [[ZYNavigationController alloc] initWithRootViewController:homeControl];
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController:homeControl];
     [self addChildViewController:homeNav];
     
     // 添加"消息"视图
     ZYMessageViewController *messageControl = [[ZYMessageViewController alloc] init];
     messageControl.view.backgroundColor = [UIColor greenColor];
-    ZYNavigationController *messageNav = [[ZYNavigationController alloc] initWithRootViewController:messageControl];
+    UINavigationController *messageNav = [[UINavigationController alloc] initWithRootViewController:messageControl];
     [self addChildViewController:messageNav];
     
     // 添加"我"视图
     ZYProfileController *profileControl = [[ZYProfileController alloc] init];
     profileControl.view.backgroundColor = [UIColor yellowColor];
-    ZYNavigationController *profileNav = [[ZYNavigationController alloc] initWithRootViewController:profileControl];
+    UINavigationController *profileNav = [[UINavigationController alloc] initWithRootViewController:profileControl];
     [self addChildViewController:profileNav];
     
     // 添加"广场"视图
     ZYDiscoverViewController *discoverControl = [[ZYDiscoverViewController alloc] init];
     discoverControl.view.backgroundColor = [UIColor blueColor];
-    ZYNavigationController *discoverNav = [[ZYNavigationController alloc] initWithRootViewController:discoverControl];
+    UINavigationController *discoverNav = [[UINavigationController alloc] initWithRootViewController:discoverControl];
     [self addChildViewController:discoverNav];
     
     // 添加"更多"视图
-    ZYMoreViewController *moreControl = [[ZYMoreViewController alloc] init];
-    ZYNavigationController *moreNav = [[ZYNavigationController alloc] initWithRootViewController:moreControl];
+    ZYMoreViewController *moreControl = [[ZYMoreViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    UINavigationController *moreNav = [[UINavigationController alloc] initWithRootViewController:moreControl];
     [self addChildViewController:moreNav];
 }
 

@@ -41,7 +41,7 @@
         self.window.rootViewController = [[ZYNewfeatureController alloc]init];
     }
 #endif 
-    self.window.rootViewController = [[ZYNewfeatureController alloc]init];
+//    self.window.rootViewController = [[ZYNewfeatureController alloc]init];
     
     // 将窗口设置为显示，keyWindow为主窗口，只有主窗口才能与用户交互
     [self.window makeKeyAndVisible];
