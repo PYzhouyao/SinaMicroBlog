@@ -81,27 +81,27 @@
 {
     NSInteger sections = [tableView numberOfSections];
     
-    //
+    //基本cell创建
     static NSString *identifier = @"cell";
     ZYTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (nil == cell) {
         cell = [[ZYTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    //
+    //cell内容设置
     [cell setGroupCellStyleWithTableView:tableView cellForRowAtIndexPath:indexPath];
     cell.textLabel.text = [_dataSource[indexPath.section][indexPath.row] name];
     
-    //
-    if (indexPath.section == 2) {
+    //cell样式处理
+    if (indexPath.section == 2) {//第三组右侧显示文字
         cell.cellType = kCellTypeLabel;
         cell.accessoryLabel.text = indexPath.row ? @"经典模式":@"有图模式";
     }
-    else if (indexPath.section == sections -1)
+    else if (indexPath.section == sections -1)//第一组表格设置成"退出登录"按钮样式
     {
         cell.cellType = kCellRedButton;
     }
-    else
+    else//其他cell右侧带小箭头图标
     {
         cell.cellType = kCellTypeArrow;
     }
